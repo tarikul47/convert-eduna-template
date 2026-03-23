@@ -1,0 +1,19 @@
+@use "../utils" as *;
+
+/*----------------------------------------*/
+/*  1.4 Common Classes
+/*----------------------------------------*/
+
+.ed-container-expand {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.transition-3 {
+  @include transition(0.3s);
+}
+
+.nice-select .option.selected {
+  background: var(--ed-primary-color);
+  color: var(--ed-white-color);
+}

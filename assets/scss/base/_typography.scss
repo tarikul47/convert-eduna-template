@@ -1,0 +1,48 @@
+@use "../utils" as *;
+
+/*----------------------------------------*/
+/*  1.2 Typography
+/*----------------------------------------*/
+
+@import url($font-url);
+
+body {
+  font-family: var(--tp-font-body);
+  font-size: 17px;
+  font-weight: normal;
+  color: var(--tp-body-color);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--tp-font-heading);
+  color: var(--tp-heading-color);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 { font-size: 48px; }
+h2 { font-size: 38px; }
+h3 { font-size: 28px; }
+h4 { font-size: 24px; }
+h5 { font-size: 18px; }
+h6 { font-size: 16px; }
+
+p {
+  font-family: var(--tp-font-body);
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--tp-body-color);
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.uppercase { text-transform: uppercase; }
+.capitalize { text-transform: capitalize; }

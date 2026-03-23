@@ -1,6 +1,17 @@
-// Forwarded modules
+// 1. Utils (Abstracts: variables, mixins, functions)
 @forward "utils";
+
+// 2. Base (Reset, Typography, Forms, Common)
+@forward "base";
+
+// 3. Theme (Theme-wide globals)
 @forward "theme";
+
+// 4. Component (Reusable elements)
 @forward "component";
+
+// 5. Layout (Structural parts like header, footer)
 @forward "layout";
+
+// 6. Pages (Page-specific styles)
 @forward "pages";

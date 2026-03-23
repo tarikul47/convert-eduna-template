@@ -1,0 +1,65 @@
+@use "../utils" as *;
+
+/*----------------------------------------*/
+/*  1.1 CSS Reset
+/*----------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+  @include transition(0.3s);
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+  }
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  outline: none;
+  @include transition(0.3s);
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+*::-moz-selection {
+  background: var(--tp-theme-color, #333);
+  color: #fff;
+  text-shadow: none;
+}
+
+*::selection {
+  background: var(--tp-theme-color, #333);
+  color: #fff;
+  text-shadow: none;
+}
